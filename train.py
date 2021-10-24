@@ -13,7 +13,7 @@ def create_dataset(subset):
         f"dataset",
         image_size=IMAGE_SIZE,
         label_mode="categorical",
-        validation_split=0.2,
+        validation_split=0.1,
         seed=25432,
         subset=subset,
         batch_size=BATCH_SIZE,
