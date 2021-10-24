@@ -37,6 +37,7 @@ def get_predictions(files: List[UploadFile] = Form(...)):
         img = upload_file.file.read()
         img = Image.open(io.BytesIO(img))
         img = img.resize(IMAGE_SIZE)
+        img = img.convert("RGB")
         img = keras.preprocessing.image.img_to_array(img)
         img = tf.expand_dims(img, 0)
         images.append(img)
