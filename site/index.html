@@ -1,73 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap" rel="stylesheet">
-	<title>Сервис для поиска пропавшихживотных</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap"
+          rel="stylesheet">
+    <title>Сервис для поиска пропавшихживотных</title>
 </head>
 <body>
 
-	<header class="header">
-		<div class="container">
-			<div class="header__inner">
-				<div class="header__logo">Поиск пропавших животных</div>
-				<nav class="nav">
-					<a class="nav__link_1 " href="#">Создать объявление</a>
-					<!-- <a class="nav__link" href="#">Картотека</a> -->
-					<a class="nav__link" href="#">Блог</a>
-					<a class="nav__link" href="#">Отзывы</a>
-					<a class="nav__link" href="#">Помощь</a>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">Поиск пропавших животных</div>
+            <nav class="nav">
+                <a class="nav__link_1 " href="#">Создать объявление</a>
+                <!-- <a class="nav__link" href="#">Картотека</a> -->
+                <a class="nav__link" href="#">Блог</a>
+                <a class="nav__link" href="#">Отзывы</a>
+                <a class="nav__link" href="#">Помощь</a>
 
-				</nav>
-			</div>
-		</div>
-	</header>
+            </nav>
+        </div>
+    </div>
+</header>
 
 
+<div class="intro">
+    <div class="container">
+        <div class="intro_inner">
+            <div class="teni">
+                <h1 class="intro__title">Сайт по поиску пропавшего животного на основе данных с камер городского
+                    видеонаблюдения.</h1>
+            </div>
+            <radio class="Radio"></radio>
 
-	<div class="intro">
-		<div class="container">
-			<div class="intro_inner">
-				<div class="teni">
-					<h1 class="intro__title">Сайт по поиску пропавшего животного на основе данных с камер городского видеонаблюдения.</h1>
-				</div>
-					<radio class="Radio"></radio>
+            <p class="Search_global">Поиск</p>
 
-						<p class="Search_global">Поиск</p>
+            <!-- карточка для картинок -->
+            <div class="cardIm">
+                <input type="file" id="file">
+            </div>
+            <div>
+                <p class="Loading_an_image">Загрузите фото вашего питомца</p>
+                <p class="Search">Параметры поиска:</p>
+                <p>Собака<input type="radio" name="istochnik" value="sobaka"></p>
+                <!-- ДОДЕЛАТЬ СКОПИРОВАВ <p>Собака<input type="radio" name="istochnik" value="sobaka"></p> -->
+                <p class="Colour">Цвет:</br></p>
+                <p>Темный<input type="radio" name="istochnik_1" value="dark">
+                    Светлый<input type="radio" name="istochnik_1" value="light">
+                    Разноцветный<input type="radio" name="istochnik_1" value="multicolored"></p>
+                <p class="tail">Тип хвоста:</p>
+                <p>
+                    Короткий<input type="radio" name="istochnik_2" value="short_tail">
+                    Длинный<input type="radio" name="istochnik_2" value="long_tail">
+                </p>
+            </div>
+            <input type="submit" name="Отпрравить">
+        </div>
+    </div>
+</div>
 
-		<!-- карточка для картинок -->
-				<div class="cardIm">
-					<input type="file" id="file">
-				</div>
-						<div>
-
-						<p class="Loading_an_image">Загрузите фото вашего питомца</p>
-						<p class="Search">Параметры поиска:</p>
-						<p>Собака<input type="radio" name="istochnik" value="sobaka"></p>
-						<!-- ДОДЕЛАТЬ СКОПИРОВАВ <p>Собака<input type="radio" name="istochnik" value="sobaka"></p> -->
-							<p class="Colour">Цвет:</br></p>
-						<p>Темный<input type="radio" name="istochnik_1" value="dark">
-						Светлый<input type="radio" name="istochnik_1" value="light">
-						Разноцветный<input type="radio" name="istochnik_1" value="multicolored"></p>
-						<p class="tail">Тип хвоста:</p>
-						<p>
-						Короткий<input type="radio" name="istochnik_2" value="short_tail">
-						Длинный<input type="radio" name="istochnik_2" value="long_tail">
-						</p>
-						</div>
-						<input type="submit" name="Отпрравить">
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<script src="assets/js/upload.js"></script>
-	<script src="assets/js/app.js"></script>
+<script src="assets/js/upload.js"></script>
+<script src="assets/js/app.js"></script>
 
 </body>
+</html>
