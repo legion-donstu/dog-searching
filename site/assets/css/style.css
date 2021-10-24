@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 .intro__title {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-	font-size: px;
+	font-size: 1px;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .teni {
 font-size:25px;
-color: #fff important;
+color: #fff;
 text-shadow: 1px 1px 1px #000;
 }
 
@@ -199,13 +199,70 @@ text-shadow: 1px 1px 1px #000;
 }
 
 
-/*Loading_an_image*/
-.Loading_an_image {
-	font-size: 20px;
-	font-weight: 480;
+/*карточка для картинок*/
+.cardIm {
+	boarder-radius: 6px;
+	background: rgba(47, 176, 120, 0.29);
+	padding: 2rem;
+
 
 }
 
+/* стиль кнопки Открыть и Загрузка */
+.btn {
+	color: #42b983;
+	position: relative;
+	border-radius: 99px;
+	border: 1px solid #42b983;
+	text-transform: uppercase;
+	padding: 0.5rem 1.5rem;
+	font-weight: 700;
+	outline: none;
+	background: #fff;
+	transition: all 0.22s;
+	cursor: pointer;
+	margin-right: 1rem;
+}
+
+/*смена стилистики кнопки Загрузка*/
+.btn.primary {
+	background: #42b983;
+	color: #fff;
+}
+
+/*смена при нажатии на кнопку*/
+.btn:active {
+	box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+/*смена при наведении на кнопку*/
+.btn:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+/*появление картинок*/
+.preview{
+	display: flex;
+	flex-wrap: wrap;
+	padding: .5rem;
+}
+
+/*оформление картинки */
+.preview-image {
+	margin-bottom: 5rem;
+	margin-right: .5rem;
+}
+
+/* ограничение на размер*/
+.preview-image img {
+	width: 180px;
+	height: auto;
+}
+
+input[type=file] {
+	display: none;
+}
 
 /*Search*/ 
 .Search {
