@@ -1,4 +1,4 @@
-export function upload(selector, options = {}) {
+function upload(selector, options = {}) {
     const  input = document.querySelector(selector)
     const preview = document.createElement('div')
 
